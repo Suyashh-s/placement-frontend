@@ -19,7 +19,7 @@ function Dashboard() {
       return
     }
 
-    fetch(`https://backend.suyashsawant9114.workers.dev/api/profile?gr_no=${gr_no}`)
+    fetch(`https://placement.suyahsawant.com/api/profile?gr_no=${gr_no}`)
       .then(res => res.json())
       .then(data => {
         if (data.user) {
@@ -53,7 +53,7 @@ function Dashboard() {
 
     try {
       // Update profile details
-      const res = await fetch('https://backend.suyashsawant9114.workers.dev/api/profile/update', {
+      const res = await fetch('https://placement.suyahsawant.com/api/profile/update', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ gr_no, ...form })
@@ -69,7 +69,7 @@ function Dashboard() {
         if (profile) uploadForm.append('profile', profile)
         if (cv) uploadForm.append('cv', cv)
 
-        const uploadRes = await fetch('https://backend.suyashsawant9114.workers.dev/api/upload', {
+        const uploadRes = await fetch('https://placement.suyahsawant.com/api/upload', {
           method: 'POST',
           body: uploadForm
         })

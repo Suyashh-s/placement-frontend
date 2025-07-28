@@ -26,7 +26,7 @@ const FullViewOpportunities = () => {
         try {
             setLoading(true);
             const response = await axios.get(
-                'https://backend.suyashsawant9114.workers.dev/api/student/profile/view',
+                'https://placement.suyahsawant.com/api/student/profile/view',
                 { withCredentials: true }
             );
 
@@ -113,7 +113,7 @@ const FullViewOpportunities = () => {
                 setSuccessMessage("");
                 
                 const response = await axios.post(
-                    'https://backend.suyashsawant9114.workers.dev/api/student/apply',
+                    'https://placement.suyahsawant.com/api/student/apply',
                     { job_id: job.job_id },
                     { withCredentials: true }
                 );

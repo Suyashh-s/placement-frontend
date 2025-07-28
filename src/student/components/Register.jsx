@@ -35,7 +35,7 @@ function Register() {
 
     try {
       // Step 1: Register user
-      const res = await fetch('https://backend.suyashsawant9114.workers.dev/api/register', {
+      const res = await fetch('https://placement.suyahsawant.com/api/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form)
@@ -56,7 +56,7 @@ function Register() {
         uploadForm.append('profile', profile)
         uploadForm.append('cv', cv)
 
-        const uploadRes = await fetch('https://backend.suyashsawant9114.workers.dev/api/upload', {
+        const uploadRes = await fetch('https://placement.suyahsawant.com/api/upload', {
           method: 'POST',
           body: uploadForm
         })

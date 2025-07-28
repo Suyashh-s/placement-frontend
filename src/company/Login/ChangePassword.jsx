@@ -46,7 +46,7 @@ const CompanyChangePassword = () => {
       setLoading(true);
 
       const response = await fetch(
-        'https://backend.suyashsawant9114.workers.dev/api/company-auth/change-password',
+        'https://placement.suyahsawant.com/api/company-auth/change-password',
         {
           method: 'POST',
           headers: {

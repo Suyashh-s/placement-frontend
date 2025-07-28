@@ -117,7 +117,7 @@ const navigate = useNavigate();
     const fetchProfile = async () => {
       try {
         const res = await axios.get(
-          "https://backend.suyashsawant9114.workers.dev/api/student/profile/view",
+          "https://placement.suyahsawant.com/api/student/profile/view",
           { withCredentials: true }
         );
         setData(res.data.profile);

@@ -23,7 +23,7 @@
 //     }
 
 //     try {
-//       const res = await fetch(`${baseUrl}https://backend.suyashsawant9114.workers.dev/api/forgot-password`, {
+//       const res = await fetch(`${baseUrl}https://placement.suyahsawant.com/api/forgot-password`, {
 //         method: 'POST',
 //         headers: { 'Content-Type': 'application/json' },
 //         body: JSON.stringify({ email }),
@@ -49,7 +49,7 @@
 //     }
 
 //     try {
-//       const res = await fetch(`${baseUrl}https://backend.suyashsawant9114.workers.dev/api/forgot-password/verify-otp`, {
+//       const res = await fetch(`${baseUrl}https://placement.suyahsawant.com/api/forgot-password/verify-otp`, {
 //         method: 'POST',
 //         headers: { 'Content-Type': 'application/json' },
 //         body: JSON.stringify({ email, otp }),
@@ -83,7 +83,7 @@
 //   }
 
 //   try {
-//     const res = await fetch(`${baseUrl}https://backend.suyashsawant9114.workers.dev/api/forgot-password/reset-password`, {
+//     const res = await fetch(`${baseUrl}https://placement.suyahsawant.com/api/forgot-password/reset-password`, {
 //       method: 'POST',
 //       headers: { 'Content-Type': 'application/json' },
 //       body: JSON.stringify({
@@ -257,7 +257,7 @@ const ForgotPassword = () => {
       return;
     }
     try {
-      const res = await fetch(`${baseUrl}https://backend.suyashsawant9114.workers.dev/api/forgot-password`, {
+      const res = await fetch(`${baseUrl}https://placement.suyahsawant.com/api/forgot-password`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
@@ -277,7 +277,7 @@ const ForgotPassword = () => {
   const handleResendOtp = async () => {
     setMessage('');
     try {
-      const res = await fetch(`${baseUrl}https://backend.suyashsawant9114.workers.dev/api/forgot-password`, {
+      const res = await fetch(`${baseUrl}https://placement.suyahsawant.com/api/forgot-password`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
@@ -324,7 +324,7 @@ const ForgotPassword = () => {
       return;
     }
     try {
-      const res = await fetch(`https://backend.suyashsawant9114.workers.dev/api/forgot-password/verify-otp`, {
+      const res = await fetch(`https://placement.suyahsawant.com/api/forgot-password/verify-otp`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, otp: otpString }),
@@ -355,7 +355,7 @@ const ForgotPassword = () => {
       return;
     }
     try {
-      const res = await fetch(`https://backend.suyashsawant9114.workers.dev/api/forgot-password/reset-password`, {
+      const res = await fetch(`https://placement.suyahsawant.com/api/forgot-password/reset-password`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

@@ -32,7 +32,7 @@ export const AuthProvider = ({ children }) => {
       }
 
       // Verify with backend
-      const response = await fetch('https://backend.suyashsawant9114.workers.dev/api/auth/verify', {
+      const response = await fetch('https://placement.suyahsawant.com/api/auth/verify', {
         method: 'GET',
         credentials: 'include',
         headers: {
@@ -72,7 +72,7 @@ export const AuthProvider = ({ children }) => {
   const logout = async () => {
     try {
       // Call backend logout
-      await fetch('https://backend.suyashsawant9114.workers.dev/api/auth/logout', {
+      await fetch('https://placement.suyahsawant.com/api/auth/logout', {
         method: 'POST',
         credentials: 'include'
       });

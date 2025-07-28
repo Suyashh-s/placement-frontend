@@ -46,7 +46,7 @@ const handleSubmit = async (e) => {
 
   try {
     const response = await fetch(
-      'https://backend.suyashsawant9114.workers.dev/api/company/profile/create',
+      'https://placement.suyahsawant.com/api/company/profile/create',
       {
         method: 'POST',
         body: formDataToSend,

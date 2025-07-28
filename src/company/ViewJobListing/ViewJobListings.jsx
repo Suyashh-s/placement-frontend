@@ -21,7 +21,7 @@ const ViewJobListings = () => {
       setError(null);
       
       const response = await axios.get(
-        'https://backend.suyashsawant9114.workers.dev/api/company/view-jobs',
+        'https://placement.suyahsawant.com/api/company/view-jobs',
         { withCredentials: true }
       );
       
@@ -54,7 +54,7 @@ const ViewJobListings = () => {
       ));
       
       const response = await axios.post(
-        'https://backend.suyashsawant9114.workers.dev/api/company/update-job-status',
+        'https://placement.suyahsawant.com/api/company/update-job-status',
         {
           job_id: jobId,
           status: newStatus

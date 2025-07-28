@@ -24,7 +24,7 @@ const CompanyLogin = () => {
     setLoading(true);
 
     try {
-      const res = await fetch('https://backend.suyashsawant9114.workers.dev/api/company-auth/login', {
+      const res = await fetch('https://placement.suyahsawant.com/api/company-auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
