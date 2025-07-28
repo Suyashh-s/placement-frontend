@@ -67,7 +67,7 @@ const UpdateViewProfile = () => {
     const fetchProfile = async () => {
       try {
         const res = await axios.get(
-          "https://placement-portal-backend.placementportal.workers.dev/api/student/profile/view",
+          "https://backend.suyashsawant9114.workers.dev/api/student/profile/view",
           { withCredentials: true }
         );
         setData(res.data.profile);
@@ -94,7 +94,7 @@ const UpdateViewProfile = () => {
     setMsg('');
     try {
       await axios.put(
-        "https://placement-portal-backend.placementportal.workers.dev/api/student/profile/update",
+        "https://backend.suyashsawant9114.workers.dev/api/student/profile/update",
         editData,
         { withCredentials: true }
       );

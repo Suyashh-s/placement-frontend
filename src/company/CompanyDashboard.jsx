@@ -41,12 +41,12 @@ const CompanyDashboard = () => {
 
         // fetch profile data
         const profileResponse = await axios.get(
-          'https://placement-portal-backend.placementportal.workers.dev/api/company/profile/view',
+          'https://backend.suyashsawant9114.workers.dev/api/company/profile/view',
           { withCredentials: true }
         );
         // Fetch jobs data from API
         const jobsResponse = await axios.get(
-          'https://placement-portal-backend.placementportal.workers.dev/api/company/view-jobs',
+          'https://backend.suyashsawant9114.workers.dev/api/company/view-jobs',
           { withCredentials: true }
         );
         console.log(profileResponse.data.profile)
@@ -62,7 +62,7 @@ const CompanyDashboard = () => {
           for (const job of jobsData) {
             try {
               const appResponse = await axios.get(
-                `https://placement-portal-backend.placementportal.workers.dev/api/company/applications/${job.job_id}`,
+                `https://backend.suyashsawant9114.workers.dev/api/company/applications/${job.job_id}`,
                 { withCredentials: true }
               );
               

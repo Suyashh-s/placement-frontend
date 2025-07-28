@@ -19,7 +19,7 @@ const ProtectedRoute = ({ children }) => {
         }
 
         // Verify token with backend
-        const response = await fetch('https://placement-portal-backend.placementportal.workers.dev/api/auth/verify', {
+        const response = await fetch('https://backend.suyashsawant9114.workers.dev/api/auth/verify', {
           method: 'GET',
           credentials: 'include',
           headers: {

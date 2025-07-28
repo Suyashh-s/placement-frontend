@@ -60,7 +60,7 @@ const TPOLogin = () => {
       }
 
       // Real API call for production
-      const res = await fetch('https://placement-portal-backend.placementportal.workers.dev/api/auth/tpo-login', {
+      const res = await fetch('https://backend.suyashsawant9114.workers.dev/api/auth/tpo-login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

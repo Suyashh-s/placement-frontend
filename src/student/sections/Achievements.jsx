@@ -94,7 +94,7 @@
 
 
 // //   try {
-// //     const res = await fetch('https://placement-portal-backend.placementportal.workers.dev/api/student/profile/create', {
+// //     const res = await fetch('https://backend.suyashsawant9114.workers.dev/api/student/profile/create', {
 // //   method: 'POST',
 // //   credentials: 'include', // ✅ sends HttpOnly cookie (JWT)
 // //   body: formData,         // ✅ let browser set Content-Type for FormData
@@ -505,7 +505,7 @@
 //     console.log(formData);
 
 // try {
-//   const res = await fetch('https://placement-portal-backend.placementportal.workers.dev/api/student/profile/create', {
+//   const res = await fetch('https://backend.suyashsawant9114.workers.dev/api/student/profile/create', {
 //     method: 'POST',
 //     credentials: 'include',
 //     body: formData,
@@ -1447,7 +1447,7 @@ const Achievements = ({ data, setData, markSectionVisited }) => {
       }
 
       try {
-        const res = await fetch('https://placement-portal-backend.placementportal.workers.dev/api/student/profile/create', {
+        const res = await fetch('https://backend.suyashsawant9114.workers.dev/api/student/profile/create', {
           method: 'POST',
           credentials: 'include',
           body: formData,

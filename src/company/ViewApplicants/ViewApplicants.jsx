@@ -99,7 +99,7 @@ const getCurrentUser = () => {
         for (const job of jobs) {
           try {
             const response = await axios.get(
-              `https://placement-portal-backend.placementportal.workers.dev/api/company/applications/${job.job_id}`,
+              `https://backend.suyashsawant9114.workers.dev/api/company/applications/${job.job_id}`,
               { withCredentials: true }
             );
             
@@ -142,7 +142,7 @@ const getCurrentUser = () => {
       setError(null);
       
       const response = await axios.get(
-        'https://placement-portal-backend.placementportal.workers.dev/api/company/view-jobs',
+        'https://backend.suyashsawant9114.workers.dev/api/company/view-jobs',
         { withCredentials: true }
       );
       
@@ -164,7 +164,7 @@ const getCurrentUser = () => {
       setLoadingApplicants(true);
       
       const response = await axios.get(
-        `https://placement-portal-backend.placementportal.workers.dev/api/company/applications/${jobId}`,
+        `https://backend.suyashsawant9114.workers.dev/api/company/applications/${jobId}`,
         { withCredentials: true }
       );
       
@@ -242,7 +242,7 @@ const getCurrentUser = () => {
       
       // Send update to server
       await axios.post(
-        'https://placement-portal-backend.placementportal.workers.dev/api/company/update-application-status',
+        'https://backend.suyashsawant9114.workers.dev/api/company/update-application-status',
         {
           application_id: applicationId,
           status: newStatus

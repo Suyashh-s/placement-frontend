@@ -46,7 +46,7 @@ const ChangePassword = () => {
       setLoading(true);
 
       const response = await fetch(
-        'https://placement-portal-backend.placementportal.workers.dev/api/auth/change-password',
+        'https://backend.suyashsawant9114.workers.dev/api/auth/change-password',
         {
           method: 'POST',
           headers: {

@@ -29,7 +29,7 @@
 //     setLoading(true);
 
 //     try {
-//       const res = await fetch('https://placement-portal-backend.placementportal.workers.dev/api/auth/login', {
+//       const res = await fetch('https://backend.suyashsawant9114.workers.dev/api/auth/login', {
 //         method: 'POST',
 //         headers: {
 //           'Content-Type': 'application/json',
@@ -153,7 +153,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const res = await fetch('https://placement-portal-backend.placementportal.workers.dev/api/auth/login', {
+      const res = await fetch('https://backend.suyashsawant9114.workers.dev/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

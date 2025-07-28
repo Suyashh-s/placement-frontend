@@ -92,7 +92,7 @@ const SalaryDetails = ({ data = {}, setData, onNext }) => {
         
         
 const response = await axios.post(
-    'https://placement-portal-backend.placementportal.workers.dev/api/company/post-job',
+    'https://backend.suyashsawant9114.workers.dev/api/company/post-job',
     formData,
     {
       withCredentials: true, // equivalent to fetch's `credentials: true`

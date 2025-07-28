@@ -141,7 +141,7 @@ const TnpCoordinator = () => {
 
         console.time(`Batch ${batchNumber} Request`);
         try {
-          const response = await fetch('https://placement-portal-backend.placementportal.workers.dev/api/dummydata', {
+          const response = await fetch('https://backend.suyashsawant9114.workers.dev/api/dummydata', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(batch),
@@ -300,7 +300,7 @@ const TnpCoordinator = () => {
 
       console.log('📧 Sending mail with payload:', mailPayload);
 
-      const response = await fetch('https://placement-portal-backend.placementportal.workers.dev/api/list-company', {
+      const response = await fetch('https://backend.suyashsawant9114.workers.dev/api/list-company', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

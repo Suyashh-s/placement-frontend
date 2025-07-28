@@ -75,7 +75,7 @@ const CompanyForgotPassword = () => {
       return;
     }
     try {
-      const res = await fetch(`https://placement-portal-backend.placementportal.workers.dev/api/forgot-password`, {
+      const res = await fetch(`https://backend.suyashsawant9114.workers.dev/api/forgot-password`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
@@ -95,7 +95,7 @@ const CompanyForgotPassword = () => {
   const handleResendOtp = async () => {
     setMessage('');
     try {
-      const res = await fetch(`https://placement-portal-backend.placementportal.workers.dev/api/company-auth/forgot-password`, {
+      const res = await fetch(`https://backend.suyashsawant9114.workers.dev/api/company-auth/forgot-password`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
@@ -142,7 +142,7 @@ const CompanyForgotPassword = () => {
       return;
     }
     try {
-      const res = await fetch(`https://placement-portal-backend.placementportal.workers.dev/api/company-auth/verify-otp`, {
+      const res = await fetch(`https://backend.suyashsawant9114.workers.dev/api/company-auth/verify-otp`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, otp: otpString }),
@@ -181,7 +181,7 @@ try {
       return;
     }
     try {
-      const res = await fetch(`${baseUrl}https://placement-portal-backend.placementportal.workers.dev/api/company-auth/reset-password`, {
+      const res = await fetch(`${baseUrl}https://backend.suyashsawant9114.workers.dev/api/company-auth/reset-password`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

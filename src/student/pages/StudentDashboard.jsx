@@ -26,7 +26,7 @@ const StudentDashboard = () => {
     profile.full_name === 'undefined';
 
   if (needsFetch) {
-    fetch('https://placement-portal-backend.placementportal.workers.dev/api/student/profile/data', { credentials: 'include' })
+    fetch('https://backend.suyashsawant9114.workers.dev/api/student/profile/data', { credentials: 'include' })
       .then(res => res.json())
       .then(data => {
         if (data.success) {
