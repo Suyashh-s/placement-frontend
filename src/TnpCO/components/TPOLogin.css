@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.tpo-login-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+}
+
+/* Left Section */
+.tpo-left-panel {
+  flex: 1;
+  background-color: #121633;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  clip-path: ellipse(100% 100% at 0% 50%);
+  padding: 2rem;
+  text-align: center;
+}
+
+.tpo-left-panel .tpo-logo {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+/* Right Section */
+.tpo-right-panel {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.tpo-login-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 40px rgba(21, 60, 214, 0.534);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.tpo-login-form h2 {
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+.tpo-login-form .tpo-input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #d4dff3;
+  color: black;
+}
+
+/* Password Field with Eye Icon */
+.tpo-password-field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.tpo-password-field .tpo-input {
+  width: 100%;
+  padding: 0.8rem;
+  padding-right: 3rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #d4dff3;
+  color: black;
+  margin-bottom: 0;
+}
+
+.tpo-password-toggle-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #121633;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+
+.tpo-password-toggle-btn:hover {
+  color: #3b82f6;
+}
+
+.tpo-login-form .tpo-input::placeholder {
+  color: black;
+}
+
+.tpo-login-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.tpo-login-btn:hover {
+  background-color: #3b82f6;
+}
+
+.tpo-error {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.tpo-forgot-password-link {
+  text-align: right;
+  margin-top: 5px;
+}
+
+.tpo-forgot-password-link a {
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.tpo-forgot-password-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tpo-login-wrapper {
+    flex-direction: column;
+  }
+
+  .tpo-left-panel {
+    clip-path: none;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 1rem;
+  }
+
+  .tpo-right-panel {
+    padding: 1rem;
+  }
+
+  .tpo-login-form {
+    max-width: 90%;
+  }
+}
