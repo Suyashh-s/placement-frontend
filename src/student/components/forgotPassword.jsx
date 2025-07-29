@@ -257,7 +257,7 @@ const ForgotPassword = () => {
       return;
     }
     try {
-      const res = await fetch(`${baseUrl}https://placement.suyahsawant.com/api/forgot-password`, {
+      const res = await fetch(`https://placement.suyahsawant.com/api/api/forgot-password`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
