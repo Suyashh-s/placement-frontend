@@ -24,7 +24,7 @@ const CompanyLogin = () => {
     setLoading(true);
 
     try {
-      const res = await fetch('api/company-auth/login', {
+      const res = await fetch('/api/company-auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
