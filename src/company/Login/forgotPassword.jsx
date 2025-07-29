@@ -142,7 +142,7 @@ const CompanyForgotPassword = () => {
       return;
     }
     try {
-      const res = await fetch(`https://placement.suyahsawant.com/api/company-auth/verify-otp`, {
+      const res = await fetch(`https://placement.suyahsawant.com/api/api/company-auth/verify-otp`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, otp: otpString }),
