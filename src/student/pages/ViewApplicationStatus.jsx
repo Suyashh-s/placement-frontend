@@ -19,7 +19,7 @@ const ViewApplicationStatus = () => {
       setError(null);
       
       const response = await axios.get(
-        'https://placement.suyahsawant.com/api/student/application-status',
+        '/api/student/application-status',
         { withCredentials: true }
       );
       

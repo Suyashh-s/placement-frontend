@@ -67,7 +67,7 @@ const UpdateViewProfile = () => {
     const fetchProfile = async () => {
       try {
         const res = await axios.get(
-          "https://placement.suyahsawant.com/api/student/profile/view",
+          "/api/student/profile/view",
           { withCredentials: true }
         );
         setData(res.data.profile);
@@ -94,7 +94,7 @@ const UpdateViewProfile = () => {
     setMsg('');
     try {
       await axios.put(
-        "https://placement.suyahsawant.com/api/student/profile/update",
+        "/api/student/profile/update",
         editData,
         { withCredentials: true }
       );

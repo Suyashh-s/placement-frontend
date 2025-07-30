@@ -26,7 +26,7 @@ const ViewOpportunities = () => {
     try {
       setLoading(true);
       const response = await axios.get(
-        'https://placement.suyahsawant.com/api/student/view-jobs',
+        '/api/student/view-jobs',
         { withCredentials: true }
       );
 

@@ -46,7 +46,7 @@ const ChangePassword = () => {
       setLoading(true);
 
       const response = await fetch(
-        'https://placement.suyahsawant.com/api/auth/change-password',
+        '/api/auth/change-password',
         {
           method: 'POST',
           headers: {

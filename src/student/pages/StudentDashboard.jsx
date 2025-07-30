@@ -26,7 +26,7 @@ const StudentDashboard = () => {
     profile.full_name === 'undefined';
 
   if (needsFetch) {
-    fetch('https://placement.suyahsawant.com/api/student/profile/data', { credentials: 'include' })
+    fetch('/api/student/profile/data', { credentials: 'include' })
       .then(res => res.json())
       .then(data => {
         if (data.success) {

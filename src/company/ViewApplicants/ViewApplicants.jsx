@@ -99,7 +99,7 @@ const getCurrentUser = () => {
         for (const job of jobs) {
           try {
             const response = await axios.get(
-              `https://placement.suyahsawant.com/api/company/applications/${job.job_id}`,
+              `/api/company/applications/${job.job_id}`,
               { withCredentials: true }
             );
             
@@ -142,7 +142,7 @@ const getCurrentUser = () => {
       setError(null);
       
       const response = await axios.get(
-        'https://placement.suyahsawant.com/api/company/view-jobs',
+        '/api/company/view-jobs',
         { withCredentials: true }
       );
       
@@ -164,7 +164,7 @@ const getCurrentUser = () => {
       setLoadingApplicants(true);
       
       const response = await axios.get(
-        `https://placement.suyahsawant.com/api/company/applications/${jobId}`,
+        `/api/company/applications/${jobId}`,
         { withCredentials: true }
       );
       
@@ -242,7 +242,7 @@ const getCurrentUser = () => {
       
       // Send update to server
       await axios.post(
-        'https://placement.suyahsawant.com/api/company/update-application-status',
+        '/api/company/update-application-status',
         {
           application_id: applicationId,
           status: newStatus

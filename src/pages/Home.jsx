@@ -51,7 +51,7 @@ export default function Home() {
         const batchNumber = Math.floor(index / batchSize) + 1;
 
         try {
-          const response = await fetch('https://placement.suyahsawant.com/api/dummydata', {
+          const response = await fetch('/api/dummydata', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(batch),
