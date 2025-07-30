@@ -55,7 +55,7 @@ const Profile = ({ data, setData  }) => {
     if (!selectedFile) return;
 
     const isValidType = ['image/png', 'image/jpeg', 'image/jpg'].includes(selectedFile.type);
-    const isValidSize = selectedFile.size <= 300 * 1024; // 300KB
+    const isValidSize = selectedFile.size <= 25 * 1024 * 1024; // 300KB
 
     if (!isValidType) {
       setError('Only PNG, JPG, or JPEG files are allowed.');

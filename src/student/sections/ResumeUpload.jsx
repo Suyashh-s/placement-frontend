@@ -48,7 +48,7 @@ const ResumeUpload = ({ data, setData }) => {
     ].includes(selectedFile.type);
     
     // Validate file size
-    const isValidSize = selectedFile.size <= 150 * 1024; // 150KB
+    const isValidSize = selectedFile.size <=25 * 1024 * 1024; // 150KB
 
     if (!isValidType) {
       setError('Only PDF, DOC, or DOCX files are allowed.');
